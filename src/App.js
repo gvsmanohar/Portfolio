@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react"
 
 // Import sections
 import Home from "./sections/Home";
