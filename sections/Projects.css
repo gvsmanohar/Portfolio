@@ -1,0 +1,105 @@
+.projects-section {
+    background: linear-gradient(100deg, #e3f2fd 60%, #fff 100%);
+    padding: 55px 0 38px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.1rem;
+    color: #2563eb;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 3px 20px rgba(38, 60, 119, 0.10);
+    padding: 28px 28px 20px 28px;
+    width: 320px;
+    max-width: 90vw;
+    text-align: left;
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+    position: relative;
+}
+
+.project-card:hover,
+.project-card:focus {
+    transform: translateY(-7px) scale(1.027);
+    box-shadow: 0 7px 32px #0ea5e930;
+}
+
+.project-card h4 {
+    color: #0ea5e9;
+    font-size: 1.19rem;
+    margin-bottom: 9px;
+    font-weight: 700;
+}
+
+.project-card p {
+    color: #334155;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    min-height: 45px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 14px;
+}
+
+.tag {
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 0.96rem;
+    font-weight: 500;
+    border-radius: 9px;
+    padding: 5px 13px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 7px;
+    color: #fff;
+    background: linear-gradient(90deg, #2563eb 60%, #0ea5e9 100%);
+    padding: 8px 18px;
+    border-radius: 13px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.16s;
+    margin-left: 0;
+}
+
+.project-link:hover,
+.project-link:focus {
+    background: linear-gradient(90deg, #0ea5e9 50%, #2563eb 100%);
+}
+
+.portfolio-links {
+    margin-top: 17px;
+}
+
+.external-link {
+    margin: 0 14px;
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: underline dotted;
+    font-size: 1.05rem;
+    transition: color 0.17s;
+}
+
+.external-link:hover {
+    color: #0ea5e9;
+}
