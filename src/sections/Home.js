@@ -14,8 +14,8 @@ function Home() {
                     <span>Tableau | Python | SQL | Cloud ETL | ML</span>
                 </p>
                 <p className="hero-about">
-                    Senior Data Analyst and BI Specialist passionate about automation, AI, and transforming raw data into business decisions.<br />
-                    Experienced in banking, fintech, and healthcare.<br />
+                    Senior Data Analyst and BI Specialist passionate about automation, AI, and transforming raw data into business decisions.
+                    Experienced in banking, fintech, and healthcare.
                     I craft modern dashboards, automate reporting, and thrive at the intersection of analytics and engineering.
                 </p>
                 <div className="hero-social-row">
