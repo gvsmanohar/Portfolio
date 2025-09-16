@@ -1,34 +1,34 @@
 import React from "react";
 import "./Education.css";
-
-const educationData = [
+const schools = [
     {
-        degree: "Master of Science (Data Analytics)",
-        institution: "The University of Sheffield, United Kingdom",
+        degree: "MSc Data Analytics",
+        school: "University of Sheffield, UK",
         year: "2021"
     },
     {
-        degree: "Bachelors in Electronics and Communication",
-        institution: "VIT, Vellore, India",
-        year: "2020"
+        degree: "B.E. Electronics & Communication",
+        school: "VIT, Vellore, India",
+        year: "2019"
     }
 ];
-
 function Education() {
     return (
-        <section className="education-section" id="education">
+        <section className="education" id="education">
             <h2 className="section-title">Education</h2>
-            <div className="edu-grid">
-                {educationData.map((item, idx) => (
-                    <div className="edu-card" key={idx}>
-                        <h3>{item.degree}</h3>
-                        <p>{item.institution}</p>
-                        <span className="edu-year">{item.year}</span>
+            <div className="edu-list">
+                {schools.map((s, i) => (
+                    <div className="edu-block" key={i}>
+                        <span className="edu-degree">{s.degree}</span>
+                        {" — "}
+                        <span className="edu-inst">{s.school}</span>
+                        {" ("}
+                        <span className="edu-year">{s.year}</span>
+                        {")"}
                     </div>
                 ))}
             </div>
         </section>
     );
 }
-
 export default Education;
