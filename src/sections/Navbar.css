@@ -7,13 +7,18 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 998;
+    z-index: 999;
     transition: transform 0.29s cubic-bezier(.86, 0, .07, 1), box-shadow 0.19s;
 }
 
-.navbar-hidden {
+/* .navbar-hidden {
     transform: translateY(-120%);
     box-shadow: none;
+} */
+
+section[id] {
+    scroll-margin-top: 92px;
+    /* ensures when jumping, section header isn't hidden */
 }
 
 .navbar-content {
