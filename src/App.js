@@ -14,6 +14,7 @@ import Contact from "./sections/Contact";
 function App() {
     return (
         <div className="app-container">
+            <Navbar />
             <Home />
             <Skills />
             <Experience />
