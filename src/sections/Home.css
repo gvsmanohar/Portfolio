@@ -1,174 +1,60 @@
-.home-hero {
-    min-height: 90vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #f3f4f6 0%, #e0e7ef 100%);
-    position: relative;
-    overflow: hidden;
-    padding-top: 110px;
-    padding-bottom: 40px;
-}
-
-.hero-bg-svg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100%;
-    z-index: 1;
-    background: url('data:image/svg+xml;utf8,<svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg"><path d="M0 67 Q200 100 400 67 T800 67 T1200 67 V200 H0 Z" fill="%23c7d2fe" fill-opacity="0.18"/></svg>') repeat-x;
-    background-size: cover;
-    pointer-events: none;
-}
-
-.hero-center-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    max-width: 780px;
-    margin: 0 auto;
+.home-yan {
+    padding-top: 86px;
+    padding-bottom: 90px;
     text-align: center;
+    background: #f8fafc;
+    width: 100vw;
 }
 
-.hero-main {
-    font-size: 2.8rem;
-    font-weight: 800;
-    color: #27374d;
-    letter-spacing: -1.1px;
-    margin-bottom: 13px;
+.yan-title {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #202b38;
+    margin-bottom: 10px;
     margin-top: 0;
-    text-shadow: 0 3px 18px #fff7;
-    animation: fadein-home 1s;
 }
 
-.hero-role-alt {
-    font-size: 1.42rem;
-    font-weight: 700;
-    color: #475569;
-    margin-bottom: 22px;
-    letter-spacing: 0.2px;
-    animation: fadein-home 1.15s;
-}
-
-.hero-about {
-    font-size: 1.08rem;
-    color: #64748b;
-    margin-bottom: 32px;
-    font-weight: 400;
-    line-height: 1.7;
-    animation: fadein-home 1.28s;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hero-tagline-alt {
-    font-size: 1.14rem;
-    color: #334155;
-    margin-bottom: 38px;
-    font-weight: 500;
-    line-height: 1.7;
-    animation: fadein-home 1.25s;
-}
-
-.hero-tagline-alt span {
-    color: #6366f1;
-    font-weight: 700;
-}
-
-.hero-social-row {
-    display: flex;
-    gap: 36px;
-    justify-content: center;
+.yan-role {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.17rem;
+    color: #27374d;
     margin-bottom: 34px;
-    animation: fadein-home 1.35s;
 }
 
-.hero-icon-btn {
-    width: 62px;
-    height: 62px;
-    border-radius: 50%;
-    background: #eff4ff;
-    color: #6366f1;
+.yan-about {
+    max-width: 580px;
+    margin: 0 auto 36px auto;
+    color: #36455a;
+    font-size: 1.07rem;
+    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+}
+
+.yan-socials {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 2.15rem;
-    box-shadow: 0 2px 12px #6366f10b;
-    transition: background 0.16s, color 0.15s, box-shadow 0.17s, transform 0.14s;
-    text-decoration: none !important;
-    border: none;
-}
-
-.hero-icon-btn:hover,
-.hero-icon-btn:focus {
-    background: #a5b4fc;
-    color: #2563eb;
-    box-shadow: 0 6px 18px #a5b4fc32;
-    transform: translateY(-4px) scale(1.08);
-    outline: none;
-}
-
-.hero-tableau-link {
-    display: inline-block;
-    background: #e0e7ef;
-    color: #2563eb;
+    gap: 24px;
     margin-top: 10px;
-    padding: 10px 26px;
-    border-radius: 22px;
-    font-weight: 700;
-    font-size: 1.06rem;
-    letter-spacing: 0.2px;
-    text-decoration: none;
-    box-shadow: 0 2px 12px #0ea5e906;
-    transition: background 0.13s, color 0.13s;
-    animation: fadein-home 1.4s;
 }
 
-.hero-tableau-link:hover,
-.hero-tableau-link:focus {
-    background: #2563eb;
-    color: #fff;
+.yan-socials a {
+    color: #6366f1;
+    font-size: 1.28rem;
+    transition: color 0.14s;
 }
 
-/* Minimal fade-in keyframe used above */
-@keyframes fadein-home {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
+.yan-socials a:hover {
+    color: #101f54;
 }
 
-@media (max-width: 700px) {
-    .hero-main {
-        font-size: 1.3rem;
+@media (max-width: 600px) {
+    .yan-title {
+        font-size: 1.2rem;
     }
 
-    .hero-role-alt {
+    .yan-role {
         font-size: 1rem;
-    }
-
-    .hero-social-row {
-        gap: 16px;
-    }
-
-    .hero-icon-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 1.15rem;
-    }
-
-    .home-hero {
-        padding-top: 78px;
-        min-height: 78vh;
     }
 }

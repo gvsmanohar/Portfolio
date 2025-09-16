@@ -1,0 +1,71 @@
+body,
+.app-main {
+    background: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    color: #27374d;
+}
+
+.section-divider {
+    max-width: 700px;
+    margin: 48px auto 40px auto;
+    border: none;
+    border-bottom: 1.6px solid #edecec;
+    opacity: 1;
+}
+
+section[id] {
+    scroll-margin-top: 76px;
+}
+
+/* Make all main containers adjust on small screens */
+@media (max-width: 800px) {
+
+    .skills-yan,
+    .exp-yan,
+    .projects-yan,
+    .edu-yan,
+    .contact-yan {
+        max-width: 98vw;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .yan-navbar .navbar-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+/* Adjust font sizes for mobile */
+@media (max-width: 600px) {
+    .yan-title {
+        font-size: 1.25rem;
+    }
+
+    .yan-role {
+        font-size: 1.02rem;
+    }
+
+    .section-title-yan {
+        font-size: 1rem;
+    }
+}
+
+/* Navbar tweaks for mobile */
+@media (max-width: 600px) {
+    .yan-navbar .navbar-container {
+        flex-direction: column;
+        padding: 0 2vw;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        gap: 2px;
+    }
+
+    .nav-item {
+        padding: 8px 6px;
+        font-size: 0.96rem;
+    }
+}
