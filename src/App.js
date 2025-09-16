@@ -3,6 +3,7 @@ import "./App.css";
 import { Analytics } from "@vercel/analytics/react"
 
 // Import sections
+import Navbar from "./sections/Navbar";
 import Home from "./sections/Home";
 import Skills from "./sections/Skills";
 import Experience from "./sections/Experience";

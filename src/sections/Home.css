@@ -1,121 +1,139 @@
-.home-section {
-    min-height: 80vh;
-    background: linear-gradient(135deg, #e3f0ff 0%, #ffffff 100%);
+.home-section-v2 {
+    min-height: 82vh;
+    background: linear-gradient(135deg, #f3f4f6 0%, #fff 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
+    padding: 80px 0 60px 0;
 }
 
-.home-content {
+.hero-content {
     text-align: center;
-    background: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 6px 32px rgba(40, 56, 100, 0.16);
-    border-radius: 30px;
-    padding: 40px 32px 32px 32px;
-    max-width: 560px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 32px;
+    max-width: 540px;
+    padding: 48px 32px 34px 32px;
+    box-shadow: 0 4px 32px #d1d5db07;
     margin: 0 auto;
 }
 
-.home-content h1 {
-    font-size: 2.6rem;
-    font-weight: bold;
-    margin-bottom: 12px;
-    color: #2563eb;
+.hero-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #27374d;
     letter-spacing: -1.2px;
+    transition: color 0.18s;
 }
 
-.home-content h2 {
-    font-size: 1.2rem;
+.hero-role {
+    font-size: 1.28rem;
     color: #1e293b;
+    font-weight: 600;
+    margin-bottom: 22px;
+    letter-spacing: .2px;
+}
+
+.hero-tagline {
+    color: #555e7a;
+    font-size: 1.06rem;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+.hero-highlight {
+    color: #64748b;
     font-weight: 500;
-    margin-bottom: 20px;
-    letter-spacing: 0.4px;
-}
-
-.home-content p {
-    color: #334155;
-    font-size: 1.04rem;
-    margin-bottom: 16px;
-    line-height: 1.5;
-}
-
-.animated-tagline {
     display: block;
-    margin-top: 8px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #0ea5e9;
-    animation: fadeIn 2.4s linear infinite alternate;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0.7;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.home-buttons {
-    margin: 24px 0 22px 0;
+.hero-icons {
+    margin: 0 auto 24px auto;
     display: flex;
     justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
+    gap: 28px;
 }
 
-.primary-btn,
-.outline-btn {
-    padding: 10px 22px;
-    border-radius: 24px;
+.icon-btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    color: #6366f1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: background 0.15s, color 0.17s, box-shadow 0.19s;
+    box-shadow: 0 2px 8px #64748b12;
+    text-decoration: none !important;
     border: none;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 700;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-    box-shadow: 0 2px 12px rgba(38, 60, 119, 0.06);
 }
 
-.primary-btn {
-    background: #2563eb;
-    color: #fff;
-    border: 2px solid #2563eb;
-}
-
-.primary-btn:hover,
-.primary-btn:focus {
-    background: #0ea5e9;
-    color: #fff;
-    border: 2px solid #0ea5e9;
-}
-
-.outline-btn {
-    background: #fff;
+.icon-btn:hover,
+.icon-btn:focus {
+    background: #e0e7ef;
     color: #2563eb;
-    border: 2px solid #b6d0f8;
+    box-shadow: 0 4px 15px #64748b22;
+    outline: none;
 }
 
-.outline-btn:hover,
-.outline-btn:focus {
-    background: #eff6ff;
-    color: #0ea5e9;
-    border: 2px solid #0ea5e9;
-}
-
-.tableau-link a {
-    display: inline-block;
+.tableau-link-v2 {
     margin-top: 12px;
-    font-size: 1.02rem;
-    color: #0ea5e9;
-    font-weight: 600;
-    text-decoration: underline wavy;
-    transition: color 0.2s;
 }
 
-.tableau-link a:hover {
+.tableau-link-v2 a {
     color: #2563eb;
+    text-decoration: underline wavy;
+    font-weight: 600;
+    font-size: 1.02rem;
+    opacity: 0.85;
+    transition: color 0.19s, opacity 0.13s;
+}
+
+.tableau-link-v2 a:hover {
+    color: #6366f1;
+    opacity: 1;
+}
+
+/* Minimal fade-slide animation (one time) */
+.fadein-slide {
+    animation: fadein-slide 1.2s cubic-bezier(.84, 0, .16, 1);
+}
+
+@keyframes fadein-slide {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(.99);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content {
+        padding: 32px 10px 26px 10px;
+    }
+
+    .home-section-v2 {
+        min-height: 70vh;
+        padding: 74px 0 28px 0;
+    }
+
+    .hero-title {
+        font-size: 1.32rem;
+    }
+
+    .hero-role {
+        font-size: 1rem;
+    }
+
+    .icon-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 1.3rem;
+    }
 }

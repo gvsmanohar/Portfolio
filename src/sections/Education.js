@@ -4,13 +4,13 @@ import "./Education.css";
 const educationData = [
     {
         degree: "Master of Science (Data Analytics)",
-        institution: "The University of Sheffield, UK",
+        institution: "The University of Sheffield, United Kingdom",
         year: "2021"
     },
     {
-        degree: "B.E. in Electronics and Communication",
+        degree: "Bachelors in Electronics and Communication",
         institution: "VIT, Vellore, India",
-        year: "2019"
+        year: "2020"
     }
 ];
 
